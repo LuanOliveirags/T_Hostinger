@@ -14,7 +14,7 @@
   box-shadow: 0 2px 24px rgba(0, 0, 0, 0.05);
 }
 
-.about-section .section-title { color: #181818; }
+.about-section .section-title { color: var(--primary); }
 
 .about-content p {
   max-width: 700px;

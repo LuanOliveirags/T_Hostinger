@@ -129,7 +129,7 @@
 }
 
 @media (max-width: 480px) {
-  .section-title { font-size: 1.9rem; }
+  .section-title { font-size: 1.2rem; }
   .process-number { width: 60px; height: 60px; }
   .results-carousel { padding: 0 40px; }
   .whatsapp-float,

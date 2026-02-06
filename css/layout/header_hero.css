@@ -368,16 +368,15 @@
 }
 
 .section-title {
-  font-size: 2.5rem;
+  font-size: 1.7rem;
   font-weight: 700;
   text-align: center;
   margin-bottom: 4rem;
-  color: var(--light);
+  color: var(--primary);
   letter-spacing: 1px;
 }
 
-.section-title::after {
-  content: '';
+/* ...existing code... */
   display: block;
   width: 80px;
   height: 4px;

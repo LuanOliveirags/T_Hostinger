@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
       // Cria novo source
       const source = document.createElement('source');
       source.setAttribute('src', src);
-      source.setAttribute('type', 'videos/mp4');
+      source.setAttribute('type', 'video/mp4');
       video.appendChild(source);
       video.load();
       // Tenta dar play imediatamente após o load

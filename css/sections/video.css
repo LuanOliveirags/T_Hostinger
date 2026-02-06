@@ -46,7 +46,7 @@
 }
 
 .video-section .section-title {
-  color: #fff;
+  color: var(--primary);
   margin-bottom: 2.5rem;
 }
 
