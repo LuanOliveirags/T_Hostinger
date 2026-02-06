@@ -183,3 +183,26 @@ function initHeroParallax() {
     heroContent.style.opacity = `${Math.max(0, 1 - scrolled / 600)}`;
   });
 }
+
+// ETAPA EXTRA · Destaca automaticamente o card de consultoria centralizado na tela
+(function initConsultoriaFocusOnScroll() {
+  const cards = document.querySelectorAll('.plan-card');
+  if (!('IntersectionObserver' in window) || cards.length === 0) return;
+
+  const observer = new IntersectionObserver((entries) => {
+    let maxRatio = 0;
+    let mostVisible = null;
+    entries.forEach(entry => {
+      if (entry.intersectionRatio > maxRatio) {
+        maxRatio = entry.intersectionRatio;
+        mostVisible = entry.target;
+      }
+    });
+    cards.forEach(card => card.classList.remove('active'));
+    if (mostVisible) mostVisible.classList.add('active');
+  }, {
+    threshold: Array.from({length: 11}, (_, i) => i / 10) // 0, 0.1, ..., 1
+  });
+
+  cards.forEach(card => observer.observe(card));
+})();

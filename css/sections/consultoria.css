@@ -1,3 +1,85 @@
+/* ===== MELHORIAS CRIATIVAS CONSULTORIA ===== */
+@keyframes planFadeIn {
+  from { opacity: 0; transform: translateY(40px) scale(0.98); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.plan-card {
+  animation: planFadeIn 1s cubic-bezier(0.4,0,0.2,1);
+  box-shadow: 0 4px 32px 0 rgba(249,38,107,0.10);
+  transition: box-shadow 0.3s, border-color 0.3s, transform 0.3s;
+}
+
+.plan-card.featured, .plan-card.destaque-mais-vendido {
+  border-width: 3px;
+  border-color: var(--primary);
+  background: radial-gradient(circle at 60% 0, rgba(0,246,255,0.18), rgba(249,38,107,0.18) 80%, #050308 100%);
+  box-shadow: 0 12px 48px 0 rgba(0,246,255,0.22);
+  transform: scale(1.04);
+}
+
+.plan-card:hover {
+  box-shadow: 0 16px 48px 0 rgba(0,246,255,0.18), 0 2px 16px 0 rgba(249,38,107,0.10);
+  background: linear-gradient(120deg, rgba(0,246,255,0.06) 0%, rgba(249,38,107,0.04) 100%);
+}
+
+.plan-badge {
+  animation: planFadeIn 1.2s 0.2s backwards;
+  box-shadow: 0 2px 12px rgba(0,246,255,0.10);
+  letter-spacing: 0.08em;
+}
+
+.plan-card h3 {
+  background: linear-gradient(90deg, var(--primary), #fff 60%, #e85ca8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  transition: background 0.3s;
+}
+
+.plan-card:hover h3 {
+  filter: brightness(1.15) drop-shadow(0 0 8px var(--primary));
+}
+
+.plan-features li {
+  position: relative;
+  padding-left: 1.8em;
+  transition: color 0.3s, background 0.3s;
+}
+.plan-features li::before {
+  content: '✔';
+  position: absolute;
+  left: 0.2em;
+  color: var(--primary);
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: color 0.3s;
+}
+.plan-features li:hover {
+  color: var(--primary);
+  background: rgba(0,246,255,0.04);
+}
+.plan-features li:hover::before {
+  color: #e85ca8;
+}
+
+.plan-button {
+  background: linear-gradient(90deg, var(--primary), #e85ca8 100%);
+  color: #181818;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  box-shadow: 0 2px 12px rgba(0,246,255,0.10);
+  transition: background 0.3s, color 0.3s, transform 0.2s;
+}
+.plan-button:hover {
+  background: linear-gradient(90deg, #e85ca8 0%, var(--primary) 100%);
+  color: #fff;
+  transform: translateY(-4px) scale(1.04);
+  box-shadow: 0 8px 32px rgba(0,246,255,0.18);
+}
 /* ===== ETAPA 6 · CONSULTORIA ===== */
 .skills-section {
   padding: 100px 2rem;

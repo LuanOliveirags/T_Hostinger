@@ -1,3 +1,76 @@
+/* ===== RESPONSIVIDADE COMO FUNCIONA ===== */
+@media (max-width: 900px) {
+  .process-section {
+    padding: 60px 0.5rem;
+  }
+  .process-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  .process-card {
+    padding: 28px 12px;
+    margin: 0 auto;
+    min-width: 0;
+    max-width: 98vw;
+  }
+  .process-number {
+    width: 54px;
+    height: 54px;
+    font-size: 1.3rem;
+    margin-bottom: 18px;
+  }
+  .process-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+  .process-card p {
+    font-size: 0.97rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .process-section {
+    padding: 36px 0.2rem;
+  }
+  .process-grid {
+    gap: 1.2rem;
+    margin-top: 1.2rem;
+  }
+  .process-card {
+    padding: 18px 4px;
+    border-radius: 10px;
+  }
+  .process-number {
+    width: 38px;
+    height: 38px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  .process-card h3 {
+    font-size: 0.98rem;
+    margin-bottom: 7px;
+  }
+  .process-card p {
+    font-size: 0.89rem;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 400px) {
+  .process-section {
+    padding: 18px 0.1rem;
+  }
+  .process-card {
+    padding: 10px 2px;
+  }
+  .process-card h3 {
+    font-size: 0.85rem;
+  }
+  .process-card p {
+    font-size: 0.8rem;
+  }
+}
 /* ===== MELHORIAS CRIATIVAS COMO FUNCIONA ===== */
 .process-section {
   position: relative;
