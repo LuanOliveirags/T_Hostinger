@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initActiveMenuOnScroll();
   initResultsCarousel();
   initHeroParallax();
+  initVideoSwitch();
 });
 
 // ETAPA 1 · Esconde o preloader ao finalizar o carregamento
@@ -205,4 +206,26 @@ function initHeroParallax() {
   });
 
   cards.forEach(card => observer.observe(card));
-})();
+}());
+
+// Troca dinâmica dos vídeos na seção "Mito ou Verdade?"
+document.addEventListener('DOMContentLoaded', function () {
+  const video = document.getElementById('mainVideo');
+  const btns = document.querySelectorAll('.video-btn');
+  if (!video || !btns.length) return;
+
+  btns.forEach(btn => {
+    btn.addEventListener('click', function () {
+      if (btn.classList.contains('active')) return;
+      btns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const src = btn.getAttribute('data-src');
+      const source = video.querySelector('source');
+      if (source) {
+        source.setAttribute('src', src);
+        video.load();
+        video.play();
+      }
+    });
+  });
+});

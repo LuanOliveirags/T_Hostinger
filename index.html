@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <!--
     ETAPA 1 · Estrutura base do documento HTML responsável por renderizar toda a landing page.
@@ -131,6 +132,7 @@
         </div>
     </section>
 
+
     <!-- ETAPA 7 · Prova social com resultados -->
     <section class="portfolio-section" id="resultados">
         <div class="container">
@@ -173,6 +175,25 @@
             </div>
         </div>
     </section>
+            <!-- ETAPA 5.1 · Seção de Vídeo Destaque -->
+    <section class="video-section" id="video">
+        <div class="container">
+            <h2 class="section-title">Mito ou Verdade?</h2>
+            <div class="video-wrapper">
+                <video controls poster="img/video-thumb.jpg" class="main-video" id="mainVideo">
+                    <source src="videos/Mito ou verdade 1.mp4" type="video/mp4">
+                    Seu navegador não suporta o elemento <code>video</code>.
+                </video>
+                <div class="video-controls">
+                    <button class="video-btn active" data-src="videos/Mito ou verdade 1.mp4">Parte 1</button>
+                    <button class="video-btn" data-src="videos/Mito ou verdade 2.mp4">Parte 2</button>
+                </div>
+                <div class="video-caption">
+                    <p>Demarto e Personal!</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- ETAPA 8 · Rodapé institucional -->
     <footer class="footer">
@@ -200,6 +221,7 @@
 
         <!-- ETAPA 10 · Scripts principais (interações e animações) -->
         <script src="js/script-index.js"></script>
+        <script src="js/video.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
