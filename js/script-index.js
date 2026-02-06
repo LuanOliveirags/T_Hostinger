@@ -214,18 +214,16 @@ function initHeroParallax() {
   if (!('IntersectionObserver' in window) || cards.length === 0) return;
 
   const observer = new IntersectionObserver((entries) => {
-    let maxRatio = 0;
-    let mostVisible = null;
     entries.forEach(entry => {
-      if (entry.intersectionRatio > maxRatio) {
-        maxRatio = entry.intersectionRatio;
-        mostVisible = entry.target;
+      if (entry.intersectionRatio >= 0.5) {
+        cards.forEach(card => card.classList.remove('active'));
+        entry.target.classList.add('active');
+      } else {
+        entry.target.classList.remove('active');
       }
     });
-    cards.forEach(card => card.classList.remove('active'));
-    if (mostVisible) mostVisible.classList.add('active');
   }, {
-    threshold: Array.from({length: 11}, (_, i) => i / 10) // 0, 0.1, ..., 1
+    threshold: [0.5]
   });
 
   cards.forEach(card => observer.observe(card));
