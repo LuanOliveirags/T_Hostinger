@@ -158,15 +158,50 @@
     right: 0;
     height: 100vh;
     width: 100vw;
-    background: linear-gradient(120deg, rgba(7,7,7,0.98) 60%, rgba(233,92,168,0.12) 100%);
-    backdrop-filter: blur(12px) saturate(180%);
+    background: rgba(20, 20, 30, 0.82);
+    backdrop-filter: blur(18px) saturate(180%) brightness(1.08);
+    -webkit-backdrop-filter: blur(18px) saturate(180%) brightness(1.08);
     align-items: center;
-    justify-content: center;
-    gap: 2.8rem;
-    padding: 40px 0 60px 0;
+    justify-content: flex-start;
+    gap: 0;
+    padding: 38px 0 0 0;
     z-index: 1001;
     animation: menuSlideIn 0.5s cubic-bezier(0.4,0,0.2,1);
-    box-shadow: -4px 0 32px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 8px 48px 0 rgba(233,92,168,0.18), 0 2px 32px 0 rgba(0,246,255,0.10);
+    border-left: 1.5px solid rgba(233,92,168,0.13);
+  }
+  .nav-menu > li {
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+  }
+  .nav-menu > li:first-child {
+    margin-top: 2.5rem;
+  }
+  .nav-menu > li:last-child {
+    margin-bottom: 0;
+  }
+  .palette-selector.palette-selector-menu {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 32px;
+    margin: 0 auto;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+    padding: 0.7rem 1.2rem;
+    background: rgba(30,30,40,0.7);
+    border-radius: 18px;
+    box-shadow: 0 2px 12px rgba(233,92,168,0.08);
+    font-size: 1.05rem;
+  }
+  .palette-selector.palette-selector-menu span {
+    margin-right: 0.7rem;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 0.2px;
   }
   @keyframes menuSlideIn {
     from { opacity: 0; right: -100vw; }
@@ -180,29 +215,35 @@
     animation: none;
   }
   .nav-menu li a {
-    font-size: 1.3rem;
-    padding: 1.3rem 2.8rem;
-    border-radius: 22px;
-    background: none;
+    font-size: 1.25rem;
+    padding: 1.2rem 2.2rem;
+    border-radius: 18px;
+    background: rgba(255,255,255,0.04);
     color: #fff;
-    margin: 0.4rem 0;
-    transition: background 0.2s, color 0.2s, box-shadow 0.2s, padding 0.2s;
-    box-shadow: 0 2px 12px rgba(233,92,168,0.08);
+    margin: 0.5rem 0;
+    transition: background 0.22s, color 0.22s, box-shadow 0.22s, padding 0.22s;
+    box-shadow: 0 2px 18px 0 rgba(233,92,168,0.10);
     position: relative;
     z-index: 2;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    border: 1.5px solid transparent;
   }
   .nav-menu li a:hover, .nav-menu li a:focus {
     background: linear-gradient(90deg, #e85ca8 0%, #00f6ff 100%);
     color: #181818;
-    box-shadow: 0 4px 24px #e85ca844;
+    box-shadow: 0 6px 32px #e85ca844;
     outline: none;
+    border: 1.5px solid #e85ca8;
   }
   .nav-menu li a.active {
     background: linear-gradient(90deg, #e85ca8 0%, #00f6ff 100%);
     color: #181818;
     font-weight: 800;
-    box-shadow: 0 4px 24px #e85ca844;
-    border: none;
+    box-shadow: 0 8px 32px #e85ca844;
+    border: 2px solid #e85ca8;
+    filter: brightness(1.08);
+    letter-spacing: 1px;
   }
 }
 
