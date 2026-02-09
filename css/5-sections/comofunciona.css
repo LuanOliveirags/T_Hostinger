@@ -1,96 +1,4 @@
-/* ===== RESPONSIVIDADE COMO FUNCIONA ===== */
-@media (max-width: 900px) {
-  .process-section {
-    padding: 60px 0.5rem;
-    text-align: center;
-  }
-    .process-grid {
-      grid-template-columns: 1fr;
-      gap: 1.5rem;
-      margin-top: 1.5rem;
-      justify-items: center;
-      align-items: center;
-    }
-  .process-card {
-    padding: 28px 12px;
-    margin: 0 auto;
-    min-width: 0;
-    max-width: 98vw;
-    text-align: center;
-  }
-  .process-number {
-    width: 54px;
-    height: 54px;
-    font-size: 1.3rem;
-    margin-bottom: 18px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .process-card h3 {
-    font-size: 1.1rem;
-    margin-bottom: 10px;
-    text-align: center;
-  }
-  .process-card p {
-    font-size: 0.97rem;
-    text-align: center;
-  }
-}
 
-@media (max-width: 600px) {
-  .process-section {
-    padding: 36px 0.2rem;
-    text-align: center;
-  }
-    .process-grid {
-      gap: 0.7rem;
-      margin-top: 0.7rem;
-      justify-items: center;
-      align-items: center;
-    }
-    .process-card {
-      padding: 10px 2px;
-      border-radius: 8px;
-      text-align: center;
-    }
-  .process-number {
-    width: 38px;
-    height: 38px;
-    font-size: 1rem;
-    margin-bottom: 10px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .process-card h3 {
-    font-size: 0.98rem;
-    margin-bottom: 7px;
-    text-align: center;
-  }
-  .process-card p {
-    font-size: 0.89rem;
-    line-height: 1.5;
-    text-align: center;
-  }
-}
-
-@media (max-width: 400px) {
-  .process-section {
-     padding: 8px 0.1rem;
-    text-align: center;
-  }
-  .process-card {
-     padding: 6px 1px;
-    text-align: center;
-  }
-  .process-card h3 {
-     font-size: 0.75rem;
-    text-align: center;
-  }
-  .process-card p {
-     font-size: 0.7rem;
-    text-align: center;
-  }
-}
 /* ===== MELHORIAS CRIATIVAS COMO FUNCIONA ===== */
 .process-section {
   position: relative;
@@ -170,13 +78,10 @@
 }
 
 .process-grid {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2.2rem;
-  margin-top: 2.2rem;
-  width: 100%;
-  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+  margin-top: 3rem;
 }
 
 .process-card {
@@ -188,8 +93,6 @@
   transition: var(--transition);
   position: relative;
   overflow: hidden;
-  margin: 0 auto;
-  max-width: 420px;
 }
 
 .process-card::before {
