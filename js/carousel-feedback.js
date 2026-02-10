@@ -14,9 +14,10 @@
 //   3.5 Auto-slide e navegação
 // ====================================================
 const feedbackPrints = [
-  'img/F_1.PNG', 'img/F_2.PNG', 'img/F_3.jpeg', 'img/F_4.PNG', 'img/F_5.PNG',
-  'img/F_6.PNG', 'img/F_7.PNG', 'img/F_8.PNG', 'img/F_9.PNG', 'img/F_10.jpeg',
-  'img/F_11.PNG', 'img/F_12.PNG', 'img/F_13.PNG', 'img/F_14.PNG'
+  'img/screenshot-feedback-1.png',
+  'img/screenshot-feedback-2.png',
+  'img/screenshot-feedback-3.png',
+  'img/screenshot-feedback-4.png',
 ];
 
 document.addEventListener('DOMContentLoaded', initFeedbackGallery);
