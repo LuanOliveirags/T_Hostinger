@@ -1,3 +1,8 @@
+// carousel-feedback.js - carrossel de feedbacks
+
+export function initCarouselFeedback() {
+  // Lógica do carrossel de feedbacks
+}
 // ====================================================
 // carousel-feedback.js - Carrossel de feedbacks de alunas
 // Objetivo: Exibir prints de feedbacks em carrossel interativo com barra de progresso e modal
@@ -14,10 +19,10 @@
 //   3.5 Auto-slide e navegação
 // ====================================================
 const feedbackPrints = [
-  'img/screenshot-feedback-1.png',
-  'img/screenshot-feedback-2.png',
-  'img/screenshot-feedback-3.png',
-  '../img/screenshot-feedback-4.png',
+  'img/screenshot_1.png',
+  'img/screenshot_2.png',
+  'img/screenshot_3.png',
+  'img/screenshot_4.png',
 ];
 
 document.addEventListener('DOMContentLoaded', initFeedbackGallery);

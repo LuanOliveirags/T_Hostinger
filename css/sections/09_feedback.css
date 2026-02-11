@@ -1,4 +1,7 @@
-/* ===== FEEDBACK CAROUSEL ===== */
+/* =====================================================
+   FEEDBACK CAROUSEL - CONTAINER PRINCIPAL
+===================================================== */
+
 .feedback-orbit {
   background: white;
   padding: 50px 0;
@@ -6,10 +9,15 @@
   box-shadow: 0 4px 32px #D0B9A711;
   border: 3px solid #D0B9A733;
   transition: border-color 0.3s, box-shadow 0.3s;
+
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
+/* =====================================================
+   SETAS DE NAVEGAÇÃO
+===================================================== */
 
 .feedback-arrow {
   width: 60px;
@@ -19,13 +27,20 @@
   background: rgba(255, 255, 255, 0.04);
   color: #f5f5f5;
   font-size: 1.7rem;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   cursor: pointer;
-  transition: transform 0.3s, box-shadow 0.3s, background 0.3s, border-color 0.3s;
   backdrop-filter: blur(8px);
   flex-shrink: 0;
+
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s,
+    background 0.3s,
+    border-color 0.3s;
 }
 
 .feedback-arrow:hover {
@@ -35,32 +50,50 @@
   transform: translateY(-4px);
 }
 
+/* =====================================================
+   ÁREA DO CARROSSEL (DECK)
+===================================================== */
+
 .feedback-deck {
   flex: 1;
   max-width: 470px;
+  min-height: 400px;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   position: relative;
   perspective: 1400px;
-  min-height: 400px;
 }
+
+/* =====================================================
+   CARD DE FEEDBACK
+===================================================== */
 
 .feedback-card {
   width: 100%;
-  border-radius: 24px;
+  min-height: 420px;
   padding: 18px;
+
+  border-radius: 24px;
   box-shadow: 0 16px 40px #f5d1b6;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  transform-origin: center;
-  transition: transform 0.5s ease, filter 0.5s ease, opacity 0.5s ease;
+
   position: relative;
   overflow: hidden;
-  min-height: 420px;
+  transform-origin: center;
+
+  transition:
+    transform 0.5s ease,
+    filter 0.5s ease,
+    opacity 0.5s ease;
 }
 
+/* Borda animada */
 .feedback-card::after {
   content: "";
   position: absolute;
@@ -68,72 +101,95 @@
   border-radius: 24px;
   border: 1px solid transparent;
   opacity: 0;
-  transition: opacity 0.4s;
   pointer-events: none;
+  transition: opacity 0.4s;
+}
+
+/* Estado ativo */
+.feedback-card.active {
+  transform: translateY(-8px) scale(1.02);
+  border-color: #f5d1b6;
 }
 
 .feedback-card.active::after {
   opacity: 0.2;
 }
 
-.feedback-card.active {
-  transform: translateY(-8px) scale(1.02);
-  border-color: #f5d1b6;
-}
-
+/* =====================================================
+   IMAGEM DO CARD
+===================================================== */
 
 .feedback-card__image {
   width: 100%;
   height: 100%;
+  padding: 10px;
+
   border-radius: 18px;
   background: linear-gradient(180deg, #f7a668, #0f0f0f);
-  padding: 10px;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.03), inset 0 10px 40px rgba(255, 255, 255, 0.03);
+
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.03),
+    inset 0 10px 40px rgba(255, 255, 255, 0.03);
 }
 
 .feedback-card__image img {
   width: 100%;
   height: 100%;
   object-fit: contain;
+
   border-radius: 14px;
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.55);
+
   cursor: zoom-in;
-  transition: transform 0.4s ease, filter 0.4s ease;
   filter: brightness(1.02) contrast(1.05);
+
+  transition:
+    transform 0.4s ease,
+    filter 0.4s ease;
 }
 
 .feedback-card.active .feedback-card__image img {
   transform: scale(1.02);
 }
 
-/* Barra de progresso */
+/* =====================================================
+   BARRA DE PROGRESSO
+===================================================== */
+
 .feedback-progress-container {
   display: none;
   width: 100%;
   max-width: 500px;
-  margin: 24px auto 0 auto;
+  margin: 24px auto 0;
 }
 
+/* Barra base */
 .feedback-progress-bar {
   width: 100%;
   height: 4px;
-  background: rgba(255, 255, 255, 0.1);
   border-radius: 2px;
   overflow: hidden;
   position: relative;
+
+  background: rgba(255, 255, 255, 0.1);
 }
 
+/* Preenchimento */
 .feedback-progress-fill {
   height: 100%;
-  background: linear-gradient(90deg, #f5d1b6, #f0b589);
   border-radius: 2px;
-  transition: width 0.3s ease;
+
+  background: linear-gradient(90deg, #f5d1b6, #f0b589);
   box-shadow: 0 0 10px #f5d1b6;
+
+  transition: width 0.3s ease;
 }
 
+/* Pontos indicadores */
 .feedback-progress-dots {
   display: flex;
   justify-content: center;
@@ -146,8 +202,11 @@
   height: 8px;
   border-radius: 50%;
   background: #f5d1b6;
-  transition: background 0.3s ease, transform 0.3s ease;
   cursor: pointer;
+
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease;
 }
 
 .feedback-progress-dot.active {
@@ -155,49 +214,62 @@
   transform: scale(1.3);
 }
 
+/* =====================================================
+   RESPONSIVIDADE
+===================================================== */
+
+/* Tablet */
 @media (max-width: 900px) {
   .feedback-orbit {
     flex-direction: row;
     gap: 12px;
   }
+
   .feedback-arrow {
     width: 48px;
     height: 48px;
   }
+
   .feedback-deck {
     max-width: 100%;
   }
 }
 
+/* Mobile */
 @media (max-width: 520px) {
   .feedback-orbit {
     gap: 0;
     padding: 0;
     width: 100%;
   }
+
   .feedback-arrow {
     display: none;
   }
+
   .feedback-deck {
-    max-width: 100%;
     width: 100%;
+    max-width: 100%;
   }
+
   .feedback-card {
     padding: 14px;
     min-height: 450px;
   }
+
   .feedback-progress-container {
     display: block;
     max-width: 100%;
     padding: 0 20px;
   }
+
   .feedback-card__footer {
     flex-direction: column;
     align-items: flex-start;
   }
+
   .feedback-card__cta {
     width: 100%;
     text-align: center;
   }
 }
-
