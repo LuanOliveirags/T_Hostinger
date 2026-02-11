@@ -58,7 +58,7 @@
 }
 
 .footer-social a.footer-instagram ion-icon {
-  color: #ff2e6e;
+  color: #D0B9A7;
   font-size: 2em;
   transition: color 0.2s;
 }
@@ -70,11 +70,11 @@
 .footer-social a:hover {
   box-shadow: 0 4px 24px rgba(249,38,107,0.18);
   transform: scale(1.12);
-  border-color: #ff2e6e;
+  border-color: #D0B9A7;
 }
 .footer-social a.footer-instagram:hover ion-icon {
   color: #fff;
-  background: radial-gradient(circle at 60% 40%, #ff2e6e 60%, #ffb347 100%);
+  background: radial-gradient(circle at 60% 40%, #D0B9A7 60%, #ffb347 100%);
   border-radius: 50%;
 }
 .footer-social a.footer-whatsapp:hover ion-icon {

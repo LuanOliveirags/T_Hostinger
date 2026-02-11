@@ -3,8 +3,8 @@
   background: rgb(0, 0, 0);
   padding: 50px 0;
   border-radius: 30px;
-  box-shadow: 0 4px 32px #ff2e6e11;
-  border: 3px solid #ff2e6e33;
+  box-shadow: 0 4px 32px #D0B9A711;
+  border: 3px solid #D0B9A733;
   transition: border-color 0.3s, box-shadow 0.3s;
 }
 
@@ -19,18 +19,18 @@
 .portfolio-item {
   position: relative;
   overflow: hidden;
-  border: 2.5px solid #ff2e6e44;
+  border: 2.5px solid #D0B9A744;
   border-radius: 22px;
   background: #18181a;
   aspect-ratio: 16/10;
-  box-shadow: 0 4px 32px #ff2e6e22, 0 1.5px 8px #000a;
+  box-shadow: 0 4px 32px #D0B9A722, 0 1.5px 8px #000a;
   cursor: pointer;
   transition: box-shadow 0.3s, transform 0.3s, border 0.3s;
 }
 
 .portfolio-item:hover {
-  box-shadow: 0 0 32px #ff2e6e, 0 0 18px #f9266b99, 0 4px 32px #ff2e6e44;
-  border: 2.5px solid #ff2e6e;
+  box-shadow: 0 0 32px #D0B9A7, 0 0 18px #f9266b99, 0 4px 32px #D0B9A744;
+  border: 2.5px solid #D0B9A7;
 }
 
 .portfolio-item img {
@@ -49,8 +49,8 @@
   background: rgba(0,0,0,0.72);
   backdrop-filter: blur(8px) saturate(1.2);
   border-radius: 22px;
-  box-shadow: 0 0 24px #ff2e6e33;
-  border: 1.5px solid #ff2e6e44;
+  box-shadow: 0 0 24px #D0B9A733;
+  border: 1.5px solid #D0B9A744;
   display: flex;
   flex-direction: column;
   align-items: center;

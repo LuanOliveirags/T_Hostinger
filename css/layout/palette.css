@@ -1,0 +1,83 @@
+
+/* Paleta de cores */
+:root {
+	--brown-dark: #714329;
+	--brown-medium: #B08463;
+	--brown-light: #B9937B;
+	--beige: #D0B9A7;
+	--beige-gray: #B5A192;
+
+
+
+
+    
+  --primary: #D0B9A7;
+  --primary-dark: #B08463;
+  --primary-light: #D0B9A7;
+  --dark: #0a0a0a;
+  --darker: #050505;
+  --light: #ffffff;
+  --gray: #B9937B;
+  --gray-dark: #714329;
+  --transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+}
+
+body {
+	background: var(--beige-gray);
+	color: var(--brown-dark);
+}
+
+header, nav {
+	background: var(--beige);
+	color: var(--brown-dark);
+}
+
+.btn, button, .shop-now {
+	background: var(--brown-dark);
+	color: #fff;
+	border-radius: 20px;
+	padding: 12px 32px;
+	font-weight: bold;
+	border: none;
+	transition: background 0.3s;
+}
+.btn:hover, button:hover, .shop-now:hover {
+	background: var(--brown-medium);
+}
+
+section {
+	background: var(--beige);
+	color: var(--brown-dark);
+	border-radius: 24px;
+	margin-bottom: 24px;
+}
+
+footer {
+	background: var(--brown-light);
+	color: var(--brown-dark);
+}
+
+/* Titles de todas as seções */
+.section-title {
+	color: #714329;
+	font-size: 1.7rem;
+	font-weight: 500;
+	text-align: center;
+	margin-bottom: 2rem;
+	letter-spacing: 1.5px;
+	text-shadow: 0 2px 12px #ffb6d5, 0 1px 0 #fff;
+	position: relative;
+	z-index: 2;
+}
+
+/* Linha decorativa abaixo do título */
+.section-title::after {
+	content: "";
+	display: block;
+	width: 90px;
+	height: 4px;
+	background: #714329;
+	margin: 16px auto 0 auto;
+	border-radius: 2px;
+}

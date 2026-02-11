@@ -6,13 +6,13 @@
   background: white;
   padding: 50px 0;
   border-radius: 30px;
-  box-shadow: 0 4px 32px #ff2e6e11;
-  border: 3px solid #ff2e6e33;
+  box-shadow: 0 4px 32px #D0B9A711;
+  border: 3px solid #D0B9A733;
   transition: border-color 0.3s, box-shadow 0.3s;
 }
 
 .section-title {
-  color: #ff2e6e;
+  color: #D0B9A7;
   font-size: 2rem;
   font-weight: 900;
   text-align: center;
@@ -31,7 +31,7 @@
 
 .plan-card {
   background: #000000;
-  border: 2.5px solid #ff2e6e33;
+  border: 2.5px solid #D0B9A733;
   border-radius: 22px;
   padding: 48px 36px;
   text-align: center;
@@ -49,14 +49,14 @@
 }
 
 .plan-card.featured {
-  border-color: #ff2e6e;
+  border-color: #D0B9A7;
   background: linear-gradient(120deg, #fff 80%, #ffe0ef 100%);
   transform: scale(1.04);
-  box-shadow: 0 20px 50px #ff2e6e22;
+  box-shadow: 0 20px 50px #D0B9A722;
 }
 
 .plan-card.featured .plan-badge {
-  background: linear-gradient(90deg, #ff2e6e, #ff5a8f);
+  background: linear-gradient(90deg, #D0B9A7, #ff5a8f);
   color: #fff;
   font-weight: 900;
   font-size: 1.1rem;
@@ -66,7 +66,7 @@
   top: -22px;
   left: 50%;
   transform: translateX(-50%);
-  box-shadow: 0 5px 20px #ff2e6e44;
+  box-shadow: 0 5px 20px #D0B9A744;
   letter-spacing: 1.2px;
   z-index: 3;
   border: 2px solid #fff;
@@ -90,10 +90,10 @@
 }
 
 .plan-title-personalizado:hover {
-  background: #ff2e6e;
+  background: #D0B9A7;
   color: #000000 !important;
   border: 2px solid #000;
-  box-shadow: 0 4px 18px #ff2e6e55, 0 1px 0 #000;
+  box-shadow: 0 4px 18px #D0B9A755, 0 1px 0 #000;
 }
 
 .plan-price {
@@ -106,14 +106,14 @@
 
 .plan-price .currency {
   font-size: 1.5rem;
-  color: #ff2e6e;
+  color: #D0B9A7;
   font-weight: 600;
   margin-top: 10px;
 }
 
 .plan-price .amount {
   font-size: 4.5rem;
-  color: #ff2e6e;
+  color: #D0B9A7;
   font-weight: 900;
   line-height: 1;
   text-shadow: 0 2px 8px #000000, 0 1px 0 #000000;
@@ -121,7 +121,7 @@
 
 .plan-price .cents {
   font-size: 2rem;
-  color: #ff2e6e;
+  color: #D0B9A7;
   font-weight: 600;
   margin-top: 10px;
 }
@@ -158,7 +158,7 @@
   display: block;
   width: 100%;
   padding: 20px;
-  background: linear-gradient(90deg, #ff2e6e, #ff5a8f);
+  background: linear-gradient(90deg, #D0B9A7, #ff5a8f);
   color: #fff;
   text-decoration: none;
   font-weight: 800;
@@ -166,7 +166,7 @@
   border-radius: 50px;
   transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
   letter-spacing: 1.2px;
-  box-shadow: 0 10px 30px #ff2e6e22;
+  box-shadow: 0 10px 30px #D0B9A722;
   border: none;
   cursor: pointer;
   text-shadow: 0 2px 8px #ffb6d5, 0 1px 0 #fff;
@@ -174,9 +174,9 @@
 }
 
 .plan-button:hover {
-  background: linear-gradient(90deg, #ff5a8f, #ff2e6e);
+  background: linear-gradient(90deg, #ff5a8f, #D0B9A7);
   transform: translateY(-3px) scale(1.04);
-  box-shadow: 0 15px 40px #ff2e6e33;
+  box-shadow: 0 15px 40px #D0B9A733;
   color: #fff;
 }
 

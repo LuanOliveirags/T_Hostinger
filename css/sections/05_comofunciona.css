@@ -1,13 +1,16 @@
 /* ===== PROCESS SECTION ===== */
 .process-section {
   padding: 100px 2rem;
-  background: var(--dark);
+  background: black;
+  padding: 50px 0;
+  border-radius: 30px;
+  transition: border-color 0.3s, box-shadow 0.3s;
 }
 
 .process-intro {
   text-align: center;
   font-size: 1.1rem;
-  color: var(--gray);
+  color: #D0B9A7;
   margin: -2rem auto 0;
   line-height: 1.6;
 }
@@ -20,8 +23,8 @@
 }
 
 .process-card {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 0, 0, 0.1);
+  background: #00000079;
+  border: 1px solid #D0B9A7;
   border-radius: 15px;
   padding: 40px 30px;
   text-align: center;
@@ -48,13 +51,13 @@
 .process-card:hover {
   border-color: var(--primary);
   transform: translateY(-10px);
-  box-shadow: 0 15px 40px rgba(255, 0, 0, 0.2);
+  box-shadow: 0 15px 40px #d0b9a782;
 }
 
 .process-number {
   width: 70px;
   height: 70px;
-  background: linear-gradient(135deg, var(--primary), rgba(0, 247, 255, 0.7));
+  background: linear-gradient(135deg, #D0B9A7ba, #b36326);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -68,13 +71,13 @@
 .process-card h3 {
   font-size: 1.3rem;
   margin-bottom: 15px;
-  color: var(--light);
+  color: #D0B9A7;
   font-weight: 600;
 }
 
 .process-card p {
   font-size: 1rem;
-  color: var(--gray);
+  color: #D0B9A7;
   line-height: 1.8;
   font-weight: 300;
 }
