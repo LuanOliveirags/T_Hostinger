@@ -218,7 +218,7 @@
     right: 0;
     width: 100%;
     max-width: 300px;
-    height: 72vh;
+    height: 69vh;
     background: var(--surface-menu);
       border-left: 2px solid var(--brand-accent);
       box-shadow: 0 8px 32px 0 var(--effect-shadow-dark);
