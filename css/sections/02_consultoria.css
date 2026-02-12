@@ -54,11 +54,11 @@
 }
 
 .forwho-card.active-highlight {
-  box-shadow: 0 0 32px var(--neutral-900), 0 0 18px var(--brand-accent);
+  box-shadow: 0 0 32px var(--title-bg);
   transform: translateY(-6px) scale(1.07);
   z-index: 2;
-  border: 2px solid var(--beige);
-  background: var(--beige);
+  border: 2px solid var(--title-bg);
+  background: var(--brand-accent);
   transition: box-shadow 0.4s, transform 0.4s, border 0.4s, background 0.4s;
 }
 

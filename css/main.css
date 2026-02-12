@@ -35,3 +35,7 @@
   position: relative;
   z-index: 2;
 }
+
+section, .section-title, .container, .about-content, .forwho-section, .process-section, .faq-section, .results-carousel, .plans-grid, .feedback-deck {
+  text-align: center;
+}

@@ -14,16 +14,6 @@
 
 
 
-/* Linha decorativa abaixo do título */
-.section-title::after {
-	content: "";
-	display: block;
-	width: 90px;
-	height: 4px;
-	background: #ff4f8a;
-	margin: 16px auto 0 auto;
-	border-radius: 2px;
-}
 
 
 @keyframes neonBar {
