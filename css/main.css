@@ -24,3 +24,14 @@
 /* As cores agora são controladas exclusivamente pelo arquivo layout/palette.css */
 
 
+.section-title {
+  color: var(--title-bg);
+  font-size: 1.5rem;
+  font-weight:500;
+  text-align: center;
+  margin-bottom: 2rem;
+  letter-spacing: 1.3px;
+  text-shadow: 0 2px 12px var(--neutral-900), 0 1px 0 var(--neutral-100);
+  position: relative;
+  z-index: 2;
+}
