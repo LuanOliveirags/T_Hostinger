@@ -53,7 +53,7 @@
   border-color: var(--brand-primary);
   background: linear-gradient(120deg, var(--letter-bg-p) 80%, var(--letter-bg-p-secund) 100%);
   transform: scale(1.04);
-  box-shadow: 0 20px 50px var(--border-bg-p-secund);
+  box-shadow: 0 20px 50px var(--brand-accent);
 }
 
 .plan-card.featured .plan-badge {
