@@ -215,11 +215,11 @@
     flex-direction: column;
     align-items: center;
     position: fixed;
-    top: 10%;
+    top: 0;
     right: 0;
     width: 100%;
     max-width: 340px;
-    height: 85vh;
+    height: 100vh;
     background: var(--surface-menu);
     box-shadow: 0 8px 32px 0 var(--title-bg), 0 1.5px 24px 0 var(--brand-accent);
     border-left: 2.5px solid var(--brand-accent);
